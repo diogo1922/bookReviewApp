@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 2px;
+  font-family: "segoe ui", sans-serif;
+}
+
+.book-buttons {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(75, 75, 235);
+  font-size: 1em;
+  color: white;
+  width: 300px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.book-buttons:hover {
+  background-color: rgb(253, 73, 73);
+}
+
+label {
+  width: 100px;
+  margin-right: 20px;
+}
+
+input,
+textarea {
+  width: 200px;
+}
+.div.container {
+  position: relative;
+  color: white;
+  padding: 0px;
+}
+
+div.centered {
+  color: white;
+  font-size: 6em;
+  font-weight: 700;
+  opacity: 60%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+img {
+  width: 400px;
+}
