@@ -4,7 +4,9 @@ export class RestClient {
   // : Promise<any> - this is the method return type
   static async getBooks(): Promise<any> {
     const url = `${RestClient.baseUrl}/books`;
+
     const response = await fetch(url); // fetch() takes the URL of an API endpoint and returns a promise that resolves to a Response object. This object contains metadata about the response (Like Strtus codes, headers, body etc.)
+
     return await response.json(); // The response object has methods to extract the actual data from the response body. These methods also return a promise, withc resolves to the data itself after its been parsed.
     //The json() method reads the body of the Response object and parses it as a JavaScript object (e.g. turning a JSON string like {"name" : "Alice"} into a native JavaScript object { name: "Alice"})
   }
@@ -17,7 +19,7 @@ export class RestClient {
   }
 
   static addReview(id: number, review: any): Promise<any> {
-    const url = `${RestClient.baseUrl}/addReviewForBook/${id}`;
+    const url = `${RestClient.baseUrl}/books/addReviewForBook/${id}`;
     return fetch(url, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },

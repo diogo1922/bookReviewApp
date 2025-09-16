@@ -9,6 +9,8 @@ export const Books = () => {
     RestClient.getBooks().then((books) => setBooks(books));
   }, []);
 
+  console.log(books);
+
   return (
     <div>
       <h1>Books</h1>

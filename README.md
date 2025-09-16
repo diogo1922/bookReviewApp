@@ -1,2 +1,0 @@
-# bookReviewApp
-Books Review Application
